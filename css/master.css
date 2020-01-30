@@ -22,7 +22,7 @@ h4 {
     border: none;
 }
 
-.barra-fissa .btn-primary:hover {
+.barra-fissa button:hover {
     background-color: #148f77;
 }
 
@@ -34,6 +34,36 @@ h4 {
     z-index: 999;
 }
 
+/* stilizzazione menu monitor */
+#menu-esteso {
+    display: none;
+}
+
+#menu-esteso h4 {
+    font-size: 18px;
+}
+
+#menu-esteso div:hover h4 {
+    color: #148f77;
+    cursor: pointer;
+}
+
+/* stilizzazione menu per monitor oltre >969px */
+@media screen and (min-width: 970px) {
+    #hamburger {
+        display: none;
+    }
+
+    .barra-fissa h4 {
+        font-size: 30px;
+    }
+
+    #menu-esteso {
+        display: inherit;
+    }
+}
+
+/* inizio sezione START */
 .start {
     background-color: #1abc9c;
     color: white;
@@ -46,7 +76,8 @@ h4 {
     font-size: 50px;
 }
 
-.start h4 {
+p {
+    font-size: 20px;
     font-weight: 400;
 }
 
@@ -54,8 +85,8 @@ h4 {
     padding-bottom: 30px;
 }
 
-.glyphicon-star { /* problema LEGGERO centraggio??? */
-    font-size: 35px;
+.glyphicon-star { /* problema centraggio!! e problema con <420px!! */
+    font-size: 30px;
     padding: 0;
     margin: 0;
 }
@@ -65,7 +96,7 @@ h4 {
     border: 2px solid;
     border-radius: 2px;
 }
-
+/* inizio sezione PORTFOLIO */
 .portfolio {
     padding: 80px 0;
     color: #2c3e50;
@@ -81,6 +112,58 @@ h4 {
     margin-bottom: 20px;
 }
 
-#divisore-portfolio {
+.divisore-sezioni {
     padding-bottom: 20px;
+}
+
+/* inizio sezione ABOUT */
+.about {
+    padding: 80px 0;
+    background-color: #1abc9c;
+    text-align: center;
+    color: white;
+}
+
+.about .btn-default {
+    margin-top: 40px;
+    background-color: #1abc9c;
+    border: 2px solid white;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.about .btn-default:hover {
+    background-color: white;
+    color: black;
+}
+/* inizio sezione CONTACT ME */
+.contact-me {
+    padding: 80px 0;
+    color: #2c3e50;
+}
+
+.contact-me .btn-primary {
+    background-color: #1abc9c;
+    border: none;
+    padding: 20px 40px;
+}
+
+.contact-me .btn-primary:hover {
+    background-color: #148f77;
+}
+/* inizio footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+}
+
+footer h4 {
+    margin: 40px 0;
+}
+
+footer i {
+    font-size: 40px;
 }
