@@ -108,6 +108,33 @@ p {
     font-size: 30px;
 }
 
+.portfolio .immagine {
+    position: relative;
+}
+
+.portfolio .immagine .overlay {
+    background-color: rgba(26,188,156,.9);
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.immagine .overlay i {
+    font-size: 70px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.portfolio .immagine:hover .overlay {
+    opacity: 1;
+}
+
 .portfolio .immagine img {
     border-radius: 10px;
     margin-bottom: 20px;
@@ -163,7 +190,17 @@ footer {
 }
 
 footer i {
-    font-size: 40px;
+    font-size: 30px;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+footer i:hover {
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
 }
 
 .testo-colorato {
@@ -173,8 +210,8 @@ footer i {
 footer .row {
     margin: 50px 0;
 }
-/* copyright stilizzazione */
 
+/* copyright stilizzazione */
 section.copyright{
     color: white;
     background-color: #1a252f;
