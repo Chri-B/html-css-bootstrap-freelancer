@@ -49,7 +49,7 @@ h4 {
 }
 
 /* stilizzazione menu per monitor oltre >969px */
-@media screen and (min-width: 970px) {
+@media screen and (min-width: 992px) {
     #hamburger {
         display: none;
     }
@@ -85,7 +85,7 @@ p {
     padding-bottom: 30px;
 }
 
-.glyphicon-star { /* problema centraggio!! e problema con <420px!! */
+.glyphicon-star {
     font-size: 30px;
     padding: 0;
     margin: 0;
@@ -96,6 +96,7 @@ p {
     border: 2px solid;
     border-radius: 2px;
 }
+
 /* inizio sezione PORTFOLIO */
 .portfolio {
     padding: 80px 0;
@@ -110,6 +111,7 @@ p {
 .portfolio .immagine img {
     border-radius: 10px;
     margin-bottom: 20px;
+    z-index: 2
 }
 
 .divisore-sezioni {
@@ -160,10 +162,27 @@ footer {
     padding: 80px 0;
 }
 
-footer h4 {
-    margin: 40px 0;
-}
-
 footer i {
     font-size: 40px;
+}
+
+.testo-colorato {
+    color: #1abc9c;
+}
+
+footer .row {
+    margin: 50px 0;
+}
+/* copyright stilizzazione */
+
+section.copyright{
+    color: white;
+    background-color: #1a252f;
+}
+
+.copyright p {
+    font-size: 12px;
+    line-height: 50px;
+    padding: 0;
+    margin: 0;
 }
